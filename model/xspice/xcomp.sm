@@ -1,0 +1,25 @@
+* XSPICE MACROMODEL COMPARATOR
+.SUBCKT XCOMP IN+ IN- OUT
+
+* >>><<< A2 1 Y HYST
+A2 1 OUT HYST_A2
+.MODEL HYST_A2 HYST (
+   + in_low=0.0
+   + in_high=0.0
+   + hyst=1e-5
+   + out_lower_limit=-5.0
+   + out_upper_limit=5.0
+   + input_domain=0.01
+   + fraction=TRUE )
+
+* >>><<< A1 IN+ IN- 1 SUMMER_2
+A1 [IN+ IN-] 1 SUMMER_2_A1
+.MODEL SUMMER_2_A1 SUMMER (
+   + in_offset=[ 0.0 0.0] 
+   + in_gain=[ 1.0 -1.0] 
+   + out_gain=1.0
+   + out_offset=0.0)
+.end
+
+.ENDS
+

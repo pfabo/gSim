@@ -1,0 +1,4 @@
+* Generic N-channel JFET transistor
+.MODEL NJFET NJF
++ IS=100E-14 RD=10 RS=10 BETA=1e-3 VTO=-5
+

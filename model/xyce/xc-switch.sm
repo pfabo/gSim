@@ -1,0 +1,9 @@
+* Xyce analog switch
+* 1 - control
+* 2 - a  
+* 3 - b
+.SUBCKT XC-SWITCH 1 2 3 PARAMS: OFF=0.0 ON=1.0 ROFF=1e6 RON=1.0
+R1 1 0 1e6
+SW1 2 3 SW CONTROL=V(1) 
+.MODEL SW SWITCH OFF=0.0 ON=1.0 ROFF=1e6 RON=1.0
+.ENDS

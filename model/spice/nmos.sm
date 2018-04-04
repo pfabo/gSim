@@ -1,0 +1,5 @@
+* Generic N-channel MOSFET transistor
+.MODEL NMOS NMOS
++ LEVEL = 3
+* +  VTO=1 KP=0.5m W=2.5u L=0.25u
+

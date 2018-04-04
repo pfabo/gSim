@@ -1,0 +1,3 @@
+.model 2N5460  PJF(Beta=500u Betatce=-.5 Rd=1 Rs=1 Lambda=10m Vto=-3
++               Vtotc=-2.5m Cgd=2.5p M=.3333 Pb=1 Fc=.5 Cgs=4p Is=90p
++               Isr=800p N=1 Nr=2 Xti=3)

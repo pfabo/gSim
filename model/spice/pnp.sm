@@ -1,0 +1,11 @@
+* SPICE Generic PNP transistor
+.MODEL PNP PNP 
++ LEVEL=1 
++ BF=50 
++ RB=70 
++ RC=40 
++ CCS=2PF 
++ TF=0.1NS 
++ TR=10NS 
++ VJC=0.85 
++ VAF=50

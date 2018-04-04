@@ -1,0 +1,6 @@
+* Xyce transfer function 1. order
+.SUBCKT XC-TF1 1 2  PARAMS: b0=1.0 a1=1.0 a0=1.0
+R1 1 0 10e6
+B2 10 0 V=SDT(V(1)-a0/a1*V(10))
+B3 2 0 V=b0/a1*V(10) 
+.ENDS

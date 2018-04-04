@@ -1,0 +1,6 @@
+* Xyce integrator
+.SUBCKT XC-INT 1 2 PARAMS: init=0.0 offset=0.0 gain=1.0 limit_upp=1e12 limit_low=-1e12
+B1 2 0 V=SDT(V(1)+offset)*gain+init
+R1 2 0 1
+R2 1 0 1e6
+.ENDS

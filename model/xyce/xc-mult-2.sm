@@ -1,0 +1,7 @@
+* xyce 2-inputs multiplier
+.SUBCKT XC-MULT-2 1 2 3 PARAMS: in1_offset=0.0 in1_gain=1.0 in2_offset=0.0 in2_gain=1.0 out_offset=0.0 out_gain=1.0
+B1 3 0 V=(((V(1)+in1_offset)*in1_gain)*((V(2)+in2_offset)*in2_gain))*out_gain+out_offset
+R1 3 0 1
+R2 1 0 1e6
+R3 2 0 1e6
+.ENDS

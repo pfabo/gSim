@@ -1,0 +1,3 @@
+* Generic P-channel MOSFET transistor
+.MODEL PMOS PMOS
++  LEVEL=3

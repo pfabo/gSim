@@ -1,0 +1,3 @@
+*SRC=BAS40;DI_BAS40;Diodes;Si;  40.0V  0.200A  5.00ns   Diodes Inc. Schottky diode 
+.MODEL BAS40 D  ( IS=6.12u RS=0.120 BV=40.0 IBV=200n  
++ CJO=5.00p  M=0.333 N=2.61 TT=7.20n )

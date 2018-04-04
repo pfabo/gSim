@@ -1,0 +1,7 @@
+* Xyce math block - biffurcation
+.SUBCKT XC-BIFF 1 2 3 
+* V(1) - LAMBDA
+R1 1 0 1e6
+R2 2 0 1e6
+B1 3 0 V={V(1)*V(2)*(1-V(2))}
+.ENDS

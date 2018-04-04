@@ -1,0 +1,122 @@
+* XSPICE MODEL TIMER 555
+.SUBCKT TIMER_555 AGND TRIG OUT RESET CONT THRES DISCH VDD
+
+
+* >>><<< A8 11 7 9 10 D_NAND_3
+A8 [11 7 9] 10 D_NAND_3_A8
+.MODEL D_NAND_3_A8 D_NAND (
+   + rise_delay=1.0e-8
+   + fall_delay=1.0e-9
+   + input_load=1.0e-12 )
+
+R3 VDD CONT 100k  
+R5 4 AGND 100k  
+R4 CONT 4 100k  
+
+* >>><<< A9 6 8 ADC_BRIDGE
+A9 [6] [8] ADC_BRIDGE_A9
+.MODEL ADC_BRIDGE_A9 ADC_BRIDGE (
+   + in_low=0.0
+   + in_high=1.0
+   + rise_delay=1e-6
+   + fall_delay=1e-6)
+
+
+* >>><<< A12 9 OUT DAC_BRIDGE
+A12 [9] [OUT] DAC_BRIDGE_A12
+.MODEL DAC_BRIDGE_A12 DAC_BRIDGE (
+   + out_low=0
+   + out_high=4.8
+   + out_undef=2.5
+   + t_rise=1.0e-9
+   + t_fall=1.0e-9 )
+
+
+* >>><<< A7 3 6 HYST
+A7 3 6 HYST_A7
+.MODEL HYST_A7 HYST (
+   + in_low=-0.001
+   + in_high=0.001
+   + hyst=0.01
+   + out_lower_limit=0
+   + out_upper_limit=1
+   + input_domain=0.01
+   + fraction=TRUE )
+
+
+* >>><<< A6 1 AGND DISCH ASWITCH
+A6 1 (AGND DISCH) ASWITCH_A6
+.MODEL ASWITCH_A6 ASWITCH (
+   + cntl_off=0.0
+   + cntl_on=1.0
+   + r_off=1.0e12
+   + r_on=1.0
+   + log=TRUE )
+
+
+* >>><<< A5 5 7 ADC_BRIDGE
+A5 [5] [7] ADC_BRIDGE_A5
+.MODEL ADC_BRIDGE_A5 ADC_BRIDGE (
+   + in_low=0.0
+   + in_high=1.0
+   + rise_delay=1e-6
+   + fall_delay=1e-6)
+
+
+* >>><<< A4 TRIG 4 3 DIFF_2
+A4 [TRIG 4] 3 DIFF_2_A4
+.MODEL DIFF_2_A4 SUMMER (
+   + in_offset=[ 0.0 0.0] 
+   + in_gain=[ 1.0 -1.0] 
+   + out_gain=1.0
+    + out_offset=0.0)
+
+
+* >>><<< A3 2 5 HYST
+A3 2 5 HYST_A3
+.MODEL HYST_A3 HYST (
+   + in_low=-0.001
+   + in_high=0.001
+   + hyst=0.01
+   + out_lower_limit=0
+   + out_upper_limit=1
+   + input_domain=0.01
+   + fraction=TRUE )
+
+
+* >>><<< A2 CONT THRES 2 DIFF_2
+A2 [CONT THRES] 2 DIFF_2_A2
+.MODEL DIFF_2_A2 SUMMER (
+   + in_offset=[ 0.0 0.0] 
+   + in_gain=[ 1.0 -1.0] 
+   + out_gain=1.0
+    + out_offset=0.0)
+
+
+* >>><<< A11 10 8 9 D_NAND_2
+A11 [10 8] 9 D_NAND_2_A11
+.MODEL D_NAND_2_A11 D_NAND (
+   + rise_delay=1.0e-9
+   + fall_delay=1.0e-8
+   + input_load=1.0e-12 )
+
+
+* >>><<< A10 10 1 DAC_BRIDGE
+A10 [10] [1] DAC_BRIDGE_A10
+.MODEL DAC_BRIDGE_A10 DAC_BRIDGE (
+   + out_low=0.0
+   + out_high=1.0
+   + out_undef=0.5
+   + t_rise=1.0e-9
+   + t_fall=1.0e-9 )
+
+
+* >>><<< A1 RESET 11 ADC_BRIDGE
+A1 [RESET] [11] ADC_BRIDGE_A1
+.MODEL ADC_BRIDGE_A1 ADC_BRIDGE (
+   + in_low=0.0
+   + in_high=1.0
+   + rise_delay=1e-6
+   + fall_delay=1e-6)
+
+.ENDS

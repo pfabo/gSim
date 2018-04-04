@@ -1,0 +1,25 @@
+***** Discrete Diode Electrical Parameters *****
+** Product: BAT43XV2L
+** Package: SOD-523F
+** Schottky Barrier Diodes
+**-----------------------------------------------
+.MODEL BAT43 D
++ IS=1.0213e-9      
++ RS=0.98230        
++ N=1.0
+* + NR=1.0            
+* + ISR=1.45e-8       
+* + TRS1=3.5e-3
+* + TRS2=1.8e-5       
++ CJO=1.208e-11     
++ VJ=0.50
++ M=0.45            
++ FC=0.5            
++ BV=44
++ IBV=1.0e-5        
++ TT=4.315e-9       
++ EG=0.66
+**---------------------------------------------
+** Creation: Nov-10-2016   Rev: 0.0
+** ON Semiconductor
+

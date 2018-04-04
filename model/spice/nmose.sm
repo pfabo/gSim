@@ -1,0 +1,17 @@
+* Generic N-channel MOSFET transistor
+.MODEL MNMOS2 NMOS
++  LEVEL=1
++  L=1U
++  W=5U 
++  VTO=1 
++  KP=6.5e-3 
++  CBD=5PF 
++  CBS=2PF 
++  RD=5 
++  RS=2 
++  RB=0 
++  RG=0 
++  RDS=1MEG 
++  CGSO=1PF 
++  CGDO=1PF 
++  CGBO=1PF

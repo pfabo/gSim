@@ -1,0 +1,19 @@
+* XSPICE MACROMODEL CURRENT PROBE
+.SUBCKT XCP A B X
+
+A2 1 X GAIN_A2
+.MODEL GAIN_A2 GAIN (
+   + in_offset=0.0
+   + out_offset=0.0
+   + gain=100e6 )
+
+R1 B A 100e-6  
+
+A1 [A B] 1 SUMMER_2_A1
+.MODEL SUMMER_2_A1 SUMMER (
+   + in_offset=[ 0.0 0.0] 
+   + in_gain=[ 1.0 -1.0] 
+   + out_gain=1.0
+    + out_offset=0.0)
+
+.ENDS

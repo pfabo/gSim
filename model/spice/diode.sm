@@ -1,0 +1,2 @@
+* SPICE Generic diode model
+.model diode D (N=0.001)

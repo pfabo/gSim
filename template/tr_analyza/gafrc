@@ -1,0 +1,14 @@
+; 
+(component-library "../../sym/spice_commands")
+(component-library "../../sym/spice_source")
+(component-library "../../sym/spice_passive")
+(component-library "../../sym/spice_generic")
+(component-library "../../sym/spice_signal")
+;
+(component-library "../../sym/xspice_analog")
+(component-library "../../sym/xspice_digital")
+(component-library "../../sym/xspice_mixed")
+(component-library "../../sym/xspice_model")
+(component-library "../../sym/xspice_user")
+
+

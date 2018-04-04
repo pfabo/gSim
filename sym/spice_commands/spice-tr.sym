@@ -1,0 +1,10 @@
+v 20130925 2
+B 0 300 1900 300 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 0 700 9 10 0 0 0 0 1
+device=directive
+T 100 400 9 10 1 1 0 0 1
+refdes=A?
+T 500 400 9 10 1 0 0 0 1
+SPICE directive
+T 100 100 8 10 1 1 0 0 1
+value=.TRAN <tstep>  <stop> <start> <tmax> <UIC>

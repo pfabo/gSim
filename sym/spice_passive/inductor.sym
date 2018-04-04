@@ -1,0 +1,43 @@
+v 20091004 2
+T 200 200 8 10 1 1 0 0 1
+refdes=L?
+A 250 0 98 0 180 3 0 0 0 -1 -1
+A 450 0 98 0 180 3 0 0 0 -1 -1
+A 650 0 98 0 180 3 0 0 0 -1 -1
+A 850 0 98 0 180 3 0 0 0 -1 -1
+P 150 0 0 0 1 0 1
+{
+T 0 50 5 10 0 1 0 0 1
+pinnumber=1
+T 1650 200 5 10 0 0 0 0 1
+pinseq=1
+T 0 -200 5 10 0 1 0 0 1
+pinlabel=A
+T 2650 200 5 10 0 0 0 0 1
+pintype=pas
+}
+P 950 0 1100 0 1 0 1
+{
+T 1000 50 5 10 0 1 0 0 1
+pinnumber=2
+T 2350 100 5 10 0 0 180 0 1
+pinseq=2
+T 1000 -200 5 10 0 1 0 0 1
+pinlabel=B
+T 3650 100 5 10 0 0 180 0 1
+pintype=pas
+}
+T 150 1350 8 10 0 0 0 0 1
+device=INDUCTOR
+T 150 1550 8 10 0 0 0 0 1
+numslots=0
+T 150 850 8 10 0 0 0 0 1
+footprint=acy500.fp
+T 150 1100 8 10 0 0 0 0 1
+dist-license=GPL
+T -250 -1300 8 10 0 0 0 0 1
+use-license=unlimited
+T 200 400 8 10 1 1 0 0 1
+value=L-500
+T -250 -1500 8 10 0 0 0 0 1
+description=Inductor radial, 12.5mm

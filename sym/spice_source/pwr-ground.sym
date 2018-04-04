@@ -1,0 +1,23 @@
+v 20061020 1
+P 200 200 200 400 1 0 1
+{
+T 258 411 5 10 0 1 0 0 1
+pinnumber=1
+T 508 661 5 10 0 0 0 0 1
+pinseq=1
+T 258 261 5 10 0 1 0 0 1
+pinlabel=POWER_GND
+T 508 511 5 10 0 0 0 0 1
+pintype=pass
+}
+T 500 800 8 10 0 0 0 0 1
+net=GND_POWER:1
+L 400 200 -10 200 3 0 0 0 -1 -1
+L 350 100 50 100 3 0 0 0 -1 -1
+L 150 0 250 0 3 0 0 0 -1 -1
+T 500 1000 8 10 0 0 0 0 1
+value=GND_POWER
+T 490 1200 8 10 0 0 0 0 1
+description=Symbol power gnd
+T 490 1350 8 10 0 0 0 0 1
+device=SYMBOL

@@ -1,0 +1,21 @@
+v 20061020 1
+V 0 200 50 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+P 0 150 0 0 1 0 1
+{
+T 100 0 5 10 0 1 0 0 1
+pinnumber=1
+T 100 450 5 10 0 0 0 0 1
+pinseq=1
+T 100 150 5 10 1 1 0 0 1
+pinlabel=+VCC
+T 100 600 5 10 0 0 0 0 1
+pintype=power
+}
+T 100 750 8 8 0 0 0 0 1
+net=+VCC:1
+T 100 900 8 10 0 0 0 0 1
+value=+VCC
+T 100 1050 8 10 0 0 0 0 1
+description=Symbol +VCC
+T 100 1200 8 10 0 0 0 0 1
+device=SYMBOL

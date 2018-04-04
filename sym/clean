@@ -1,0 +1,9 @@
+#!/bin/sh
+# vymaze vsetky docasne zalozne subory
+
+for q in $(ls -d */); do
+	cd $q
+	echo y | rm *.sym~ 
+	echo y | rm *.sym#
+	cd ..
+done

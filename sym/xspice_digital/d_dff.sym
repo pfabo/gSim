@@ -1,0 +1,99 @@
+v 20091004 2
+P 0 1100 200 1100 1 0 0
+{
+T 100 1150 5 8 0 1 0 6 1
+pinnumber=1
+T 100 1050 5 8 0 1 0 8 1
+pinseq=1
+T 250 1100 9 8 1 1 0 1 1
+pinlabel=D
+T 250 1100 5 8 0 1 0 2 1
+pintype=in
+}
+P 1100 1100 900 1100 1 0 0
+{
+T 1000 1150 5 8 0 1 0 0 1
+pinnumber=5
+T 1000 1050 5 8 0 1 0 2 1
+pinseq=5
+T 850 1100 9 8 1 1 0 7 1
+pinlabel=Q
+T 850 1100 5 8 0 1 0 8 1
+pintype=out
+}
+P 0 400 200 400 1 0 0
+{
+T 100 450 5 8 0 1 0 6 1
+pinnumber=3
+T 100 350 5 8 0 1 0 8 1
+pinseq=3
+T 250 400 9 8 1 1 0 1 1
+pinlabel=S
+T 250 400 5 8 0 1 0 2 1
+pintype=in
+}
+P 1100 800 1000 800 1 0 0
+{
+T 1000 850 5 8 0 1 0 0 1
+pinnumber=6
+T 1000 750 5 8 0 1 0 2 1
+pinseq=6
+T 850 800 9 8 1 1 0 7 1
+pinlabel=\_Q\_
+T 850 800 5 8 0 1 0 8 1
+pintype=out
+}
+P 0 100 200 100 1 0 0
+{
+T 100 150 5 8 0 1 0 6 1
+pinnumber=4
+T 100 50 5 8 0 1 0 8 1
+pinseq=4
+T 250 100 9 8 1 1 0 1 1
+pinlabel=R
+T 250 100 5 8 0 1 0 2 1
+pintype=in
+}
+P 0 800 200 800 1 0 0
+{
+T 100 850 5 8 0 1 0 6 1
+pinnumber=2
+T 100 750 5 8 0 1 0 8 1
+pinseq=2
+T 300 800 9 8 1 1 0 1 1
+pinlabel=CLK
+T 275 800 5 8 0 1 0 2 1
+pintype=clk
+}
+B 200 0 700 1200 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1
+T 200 1800 5 10 0 0 0 0 1
+device=SPICE
+T 200 1300 8 10 1 1 0 0 1
+refdes=A?
+T 200 2000 5 10 0 0 0 0 1
+description=XSPICE digital D-flip-flops with preset and clear
+L 200 850 275 800 3 0 0 0 -1 -1
+L 275 800 200 750 3 0 0 0 -1 -1
+T 200 1600 5 10 0 0 0 0 1
+value=D_DFF
+T 200 2400 5 10 0 0 0 0 1
+clk_delay=1.0e-9
+T 200 2600 5 10 0 0 0 0 1
+set_delay=1.0e-9
+T 200 2800 5 10 0 0 0 0 1
+reset_delay=1.0e-12
+T 200 3000 5 10 0 0 0 0 1
+ic=0
+T 200 3200 5 10 0 0 0 0 1
+data_load=1.0e-12
+T 200 3400 5 10 0 0 0 0 1
+clk_load=1.0e-12
+T 200 3600 5 10 0 0 0 0 1
+set_load=1.0e-12
+T 200 3800 5 10 0 0 0 0 1
+reset_load=1.0e-12
+T 200 4000 5 10 0 0 0 0 1
+rise_delay=1.0e-9
+T 200 4200 5 10 0 0 0 0 1
+fall_delay=1.0e-9
+V 950 800 50 3 0 0 0 -1 -1 0 -1 -1 -1 -1 -1

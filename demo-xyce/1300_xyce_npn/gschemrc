@@ -1,0 +1,7 @@
+(log-window "later")
+
+(window-size 1100 825) ; Good size for 1280x1024
+
+(paper-size 11.69 8.27) ; A4
+
+(load (build-path "." "colormap")) 
